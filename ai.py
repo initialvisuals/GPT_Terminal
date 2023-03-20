@@ -8,13 +8,13 @@ import platform
 from typing import List, Tuple
 import datetime
 import contextlib
-import subprocess
 from prompt_toolkit import PromptSession # type: ignore
 from prompt_toolkit.history import FileHistory # type: ignore
 from prompt_toolkit.completion import WordCompleter # type: ignore
 from prompt_toolkit.formatted_text import FormattedText # type: ignore
 from prompt_toolkit.styles import Style # type: ignore
 
+os.system('cls' if os.name == 'nt' else 'clear')
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
