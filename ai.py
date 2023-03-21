@@ -33,8 +33,6 @@ DEFAULT_SETTINGS = {
     "tokens": 300
 }
 
-subprocess.run('cls' if os.name == 'nt' else 'clear', shell=True)
-
 def load_settings():
     with contextlib.suppress(FileNotFoundError):
         with open(SETTINGS_FILE, "r") as file:
