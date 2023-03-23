@@ -1,5 +1,6 @@
 # GPT_Terminal
 
+![Image description](GPT_Terminal@4x.png)
 
 **GPT_Terminal** is a command-line AI assistant built using OpenAI's GPT-4. It provides customizable preheaders for adding formatting and styling to your AI-generated responses. This project allows you to interact with the GPT-4 model in a terminal interface, making it easy to ask questions and receive answers quickly.
 
