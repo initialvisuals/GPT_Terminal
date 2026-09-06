@@ -1,60 +1,55 @@
-# GPT_Terminal
+# GPT Terminal
 
-![Image description](GPT_Terminal@4x.png)
+![GPT Terminal banner](GPT_Terminal@4x.png)
 
-**GPT_Terminal** is a command-line AI assistant built using OpenAI's GPT-4. It provides customizable preheaders for adding formatting and styling to your AI-generated responses. This project allows you to interact with the GPT-4 model in a terminal interface, making it easy to ask questions and receive answers quickly.
-# Outdated Code as of July 2024 for sure. I leave it here as inspiration for later projects. It probably still works though!
-Demo Video: https://www.youtube.com/watch?v=FRTy8jV2FTo
+A **command-line AI assistant** with customizable preheaders for style and formatting — talk to GPT from the terminal, tweak mode / tokens / rate, keep the vibe yours.
 
-GitHub repository: https://github.com/initialvisuals/GPT_Terminal
+Part of the [Initial Visuals](https://github.com/initialvisuals) toolkit / game lab.
 
-**Installation**
+### Status
 
-Clone the GitHub repository:
+**Archive / inspiration.** Last maintained around mid-2024. Left up as a reference for later CLI tools. It may still run against a modern OpenAI client with small fixes; treat it as a starting point, not production.
 
-`git clone https://github.com/initialvisuals/GPT_Terminal.git`
+Demo: [YouTube](https://www.youtube.com/watch?v=FRTy8jV2FTo)
 
-Change to the GPT_Terminal directory:
+### Quick start
 
-`cd GPT_Terminal`
+```bash
+git clone https://github.com/initialvisuals/GPT_Terminal.git
+cd GPT_Terminal
+pip install -r requirements.txt
+```
 
-Install the required packages:
+Set your key (never commit it):
 
-`pip install -r requirements.txt`
+```bash
+# Linux / macOS
+export OPENAI_API_KEY=your_api_key
 
-**Usage**
+# Windows (cmd)
+set OPENAI_API_KEY=your_api_key
+```
 
-Before using GPT_Terminal, you need to set up an environment variable for the OpenAI API key. Replace your_api_key with your actual OpenAI API key.
+```bash
+python ai.py
+```
 
-For Linux:
+Optional alias (Linux / macOS) — add to your shell profile:
 
+```bash
+alias ai="python /path/to/GPT_Terminal/ai.py"
+```
 
-`export OPENAI_API_KEY=your_api_key`
+Inside the session, type `help` for settings (mode, preheader, rate, tokens, …).
 
-For Windows:
+### Related
 
-`set OPENAI_API_KEY=your_api_key`
+Minimal chat sketch: [`gpt4_boilerplate`](https://github.com/initialvisuals/gpt4_boilerplate).
 
-To create an alias for GPT_Terminal on Linux/MacOS, add the following line to your shell profile (e.g., ~/.bashrc, ~/.bash_profile, or ~/.zshrc), replacing /path/to/GPT_Terminal with the actual path to the GPT_Terminal directory:
+### License
 
+MIT — see [LICENSE](LICENSE).
 
-`alias ai="python /path/to/GPT_Terminal/ai.py"`
+---
 
-For Windows, create a doskey macro by adding the following line to a new or existing batch file (e.g., ai_macro.bat), replacing C:\path\to\GPT_Terminal with the actual path to the GPT_Terminal directory:
-
-
-`doskey ai=python C:\path\to\GPT_Terminal\ai.py $*`
-
-Run the batch file to load the doskey macro:
-
-`ai_macro.bat`
-
-After setting up the alias or doskey macro, you can simply type ai in the terminal or command prompt to start GPT_Terminal.
-
-To interact with the AI, enter your prompt or question, and the AI will generate a response. You can also adjust settings like mode, preheader, rate, tokens, and more.
-
-For help with settings, type help within GPT_Terminal.
-
-**License**
-
-This project is licensed under the MIT License.
+**Initial Visuals** — tools, sims, games, and experiments.
